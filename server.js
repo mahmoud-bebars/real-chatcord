@@ -74,8 +74,7 @@ io.on('connection', (socket) => {
 })
 
 const PORT = 5000 || process.env.PORT
-const HOST = '0.0.0.0' || process.env.PORT
 
-server.listen(PORT, HOST, () =>
+server.listen(PORT, () =>
   console.log(`🚀 server is up & running on port ${PORT}`)
 )
